@@ -1,0 +1,35 @@
+<div class="tdp-container" [formGroup]="loginFormReactive.loginForm">
+  <div class="tdp-row">
+    <div class="tdp-col-12">
+      <h1 class="title-login">Mi Movistar</h1>
+    </div>
+  </div>
+  <div class="tdp-row tdp-mb-4">
+    <div class="tdp-col-lg-5 tdp-col-md-5 tdp-col-sm-12">
+      <tdp-st-input-text
+        styleinput="outline"
+        label="Número Documento"
+        formControlName="document"
+        (keydown.enter)="login()"
+        [errors]="loginFormReactive.document.errors | getErrorMap: loginDocumentErrors: loginFormReactive.document.dirty || showError">
+      </tdp-st-input-text>
+    </div>
+  </div>
+  <div class="tdp-row tdp-mb-4">
+    <div class="tdp-col-lg-5 tdp-col-md-5 tdp-col-sm-12">
+      <tdp-st-input-text
+        styleinput="outline"
+        type="password"
+        label="Contraseña"
+        formControlName="password"
+        (keydown.enter)="login()"
+        [errors]="loginFormReactive.password.errors | getErrorMap: loginPasswordErrors: loginFormReactive.password.dirty || showError">
+      </tdp-st-input-text>
+    </div>
+  </div>
+  <div class="tdp-row">
+    <div class="tdp-col-lg-2 tdp-col-md-3 tdp-col-sm-4">
+      <tdp-st-button label="Ingresar" stylebutton='raised' (tdpOnClick)="login()"></tdp-st-button>
+    </div>
+  </div>
+</div>

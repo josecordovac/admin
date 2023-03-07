@@ -1,0 +1,11 @@
+.title-login {
+  font-family: "Telefonica Hand";
+  color: #00a9e0;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .title-login {
+    font-size: 50px;
+  }
+}

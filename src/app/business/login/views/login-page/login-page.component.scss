@@ -1,0 +1,14 @@
+.logo-row {
+  background: #00a9e0;
+
+  .image-logo {
+    background: url("/assets/images/movistar-blanco.svg") no-repeat;
+    height: 25px;
+  }
+}
+
+.body-row {
+  height: calc(100vh - 73px);
+  background: url("/assets/images/personaje-desktop.jpg") no-repeat right bottom;
+  background-size: contain;
+}

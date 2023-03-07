@@ -1,0 +1,16 @@
+<div class="tdp-container-fluid">
+  <div class="tdp-row tdp-py-3 logo-row">
+    <div class="tdp-col-3 tdp-offset-1 image-logo"></div>
+    <div class="tdp-col-1 tdp-offset-6 ">
+      <tdp-st-button label="Salir" (tdpOnClick)="logout();"></tdp-st-button>
+    </div>
+  </div>
+  <div class="tdp-row">
+    <div class="tdp-col-2 tdp-px-0">
+      <tdp-menu></tdp-menu>
+    </div>
+    <div class="tdp-col-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
